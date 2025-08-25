@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cursor Blog Template</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-body text-body">
+    <div class="container py-5">
+      <h1 class="mb-4 fw-bold">Blog</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Alpha Article Card -->
+        <div class="col">
+          <div
+            class="card h-100 border rounded-4 shadow-sm hover-shadow transition"
+          >
+            <img
+              src="assets/img/alpha-bg.jpg"
+              class="card-img-top rounded-top-4"
+              alt="Essay About Alpha"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Essay About Alpha</h5>
+              <p class="card-text">Exploring the beginning of all things.</p>
+              <a href="posts/essay-about-alpha/" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <!-- Bravo Article Card -->
+        <div class="col">
+          <div
+            class="card h-100 border rounded-4 shadow-sm hover-shadow transition"
+          >
+            <img
+              src="assets/img/bravo-bg.jpg"
+              class="card-img-top rounded-top-4"
+              alt="Essay About Bravo"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Essay About Bravo</h5>
+              <p class="card-text">Deep dive into secondary elements.</p>
+              <a href="posts/essay-about-bravo/" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <!-- Charlie Article Card -->
+        <div class="col">
+          <div
+            class="card h-100 border rounded-4 shadow-sm hover-shadow transition"
+          >
+            <img
+              src="assets/img/charlie-bg.jpg"
+              class="card-img-top rounded-top-4"
+              alt="Essay About Charlie"
+              loading="lazy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Essay About Charlie</h5>
+              <p class="card-text">Understanding complex systems.</p>
+              <a href="posts/essay-about-charlie/" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fixed Footer (Now with theme toggle) -->
+    <footer class="site-footer">
+      <div class="footer-content">© 2023 Cursor Blog</div>
+      <div class="footer-nav">
+        <button
+          id="themeToggle"
+          class="btn btn-outline-secondary footer-theme-toggle"
+          title="Toggle Theme"
+          aria-label="Toggle dark/light mode"
+        >
+          ☀️
+        </button>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/toggle-theme.js"></script>
+  </body>
+</html>

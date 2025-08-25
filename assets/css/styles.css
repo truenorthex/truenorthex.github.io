@@ -1,0 +1,169 @@
+/* ===== Theme Variables ===== */
+:root {
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #000000;
+  --bs-secondary-color: #666;
+  --bs-border-color: #dee2e6;
+  --bs-card-bg: #fff;
+  --bs-body-secondary-bg: #f8f9fa;
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: #0e0e10;
+  --bs-body-color: #f4f4f4;
+  --bs-secondary-color: #aaa;
+  --bs-border-color: #333;
+  --bs-card-bg: #1c1c1e;
+  --bs-body-secondary-bg: #1a1a1c;
+}
+
+/* ===== Base Styles ===== */
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  transition: all 0.3s ease;
+  line-height: 1.6;
+  padding-bottom: 70px;
+}
+
+/* ===== Card Styles ===== */
+.card {
+  transition: all 0.3s ease;
+  background-color: var(--bs-card-bg);
+  border: 1px solid var(--bs-border-color);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: var(--bs-body-secondary-bg);
+  border-top: 1px solid var(--bs-border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  z-index: 100;
+}
+
+.footer-content {
+  font-size: 0.9rem;
+  color: var(--bs-secondary-color);
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-link {
+  color: var(--bs-secondary-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--bs-body-color);
+  text-decoration: underline;
+}
+
+.footer-theme-toggle {
+  border: 1px solid var(--bs-border-color);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+/* ===== Homepage Card Images ===== */
+.card-img-top {
+  aspect-ratio: 16/9; /* Change this value */
+  object-fit: cover;
+}
+
+/* Optional: Different ratios per breakpoint */
+@media (min-width: 992px) {
+  .card-img-top {
+    aspect-ratio: 16/9; /* Wider on desktop */
+  }
+}
+
+/* ===== Homepage Card Fixes ===== */
+/* Center cards in all views */
+.row {
+  justify-content: center !important;
+}
+
+/* Fix card proportions */
+.card {
+  max-width: 360px;
+  width: 100%;
+}
+
+/* Consistent image height */
+.card-img-top {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0 !important;
+}
+
+/* Fix mobile single-column layout */
+@media (max-width: 767px) {
+  .col {
+    max-width: 360px;
+  }
+
+  .card-img-top {
+    height: 160px;
+  }
+}
+/* ===== Card Height Control ===== */
+.card {
+  height: 100%; /* Use all available column height */
+}
+
+.card-body {
+  height: 180px; /* Fixed text area height */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem !important;
+}
+
+.card-text {
+  /* Required for most browsers */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+
+  /* Future standards */
+  display: box;
+  line-clamp: 4;
+  box-orient: vertical;
+
+  /* Fallback behavior */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 5.4em; /* approx 4 lines */
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  .card-body {
+    height: 160px;
+  }
+}

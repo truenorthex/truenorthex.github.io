@@ -4,3 +4,6 @@ folder-structure.txt
 
 # Exclude entire folder
 lib/
+
+# Exclude deploy script
+deploy.sh

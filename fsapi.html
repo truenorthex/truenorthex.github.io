@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File System API Test</title>
+  </head>
+  <body>
+    <h1>File System API Test</h1>
+    <button id="select-file-button">Select File</button>
+    <script>
+      const selectFileButton = document.getElementById("select-file-button");
+      selectFileButton.addEventListener("click", async () => {
+        try {
+          const directoryHandle = await window.showDirectoryPicker();
+          const folderName = directoryHandle.name;
+          console.log(`Folder name: ${folderName}`);
+          const [fileHandle] = await window.showOpenFilePicker({
+            startIn: directoryHandle,
+          });
+          const fileName = fileHandle.name;
+          console.log(`File name: ${fileName}`);
+          // Pass the folder name and file name to your JS code
+          // ...
+        } catch (error) {
+          console.error(error);
+        }
+      });
+    </script>
+  </body>
+</html>

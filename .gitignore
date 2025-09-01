@@ -7,3 +7,6 @@ lib/
 
 # Exclude deploy script
 deploy.sh
+
+# Voice temp file
+VOICE_.txt

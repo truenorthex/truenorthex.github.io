@@ -1,0 +1,34 @@
+<!-- nav.html -->
+<select
+  id="chapter-dropdown"
+  aria-label="Chapters"
+  onchange="if(this.value) location.href=this.value"
+>
+  <option value="" disabled selected>Chapters</option>
+  <option value="intro.html" title="Introduction to Concepts">Intro</option>
+  <option value="ch1.html" title="Chapter 1 Details">Ch1</option>
+  <option value="ch2.html" title="Chapter 2 Details">Ch2</option>
+  <option value="ch3.html" title="Chapter 3 Details">Ch3</option>
+  <option value="conclusion.html" title="Conclusion">Con</option>
+</select>
+
+<style>
+  #chapter-dropdown {
+    margin-left: 8px; /* spacing from left edge of bar */
+    height: 22px;
+    line-height: 22px; /* vertically center text */
+    font-size: 0.85rem;
+    padding: 0 18px 0 8px; /* left/right padding */
+    background: #000; /* match bar */
+    color: #fff;
+    border: 1px solid #d70f0f; /* thin border */
+    border-radius: 6px; /* rounded corners */
+    cursor: pointer;
+    box-sizing: border-box;
+    vertical-align: middle;
+  }
+  #chapter-dropdown option {
+    background: #000;
+    color: #fff;
+  }
+</style>

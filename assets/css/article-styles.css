@@ -11,12 +11,29 @@
   margin-bottom: 1.5rem;
 }
 
-/*
-.article-title {
-  font-size: 4vw;
-  margin-bottom: 0.5rem;
+/* Permanent top bar */
+#site-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 26px; /* bar height */
+  background-color: #000; /* solid black */
+  color: #fff;
+  border-bottom: 1px solid #555; rgba(222, 62, 62, 0.06);
+  z-index: 9998;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center; /* vertical centering */
+  padding-left: 8px; /* space for dropdown */
 }
-*/
+
+/* Reserve space for content below the bar */
+.article-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: calc(2rem + 26px) 1rem 2rem 1rem;
+}
 
 .article-title {
   font-size: clamp(36px, 4vw, 40px);

@@ -34,6 +34,12 @@
   </head>
 
   <body>
+    <!-- Permanent top bar -->
+    <div id="site-topbar">
+      <div id="chapter-nav-container"></div>
+      <!-- placeholder for dropdown -->
+    </div>
+
     <div class="article-container">
       <div class="article-header">
         <h1 class="article-title">Article فارسی فارسی Title</h1>
@@ -78,5 +84,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="/assets/js/toggle-theme.js"></script>
+
+    <!-- Script to load nav.html dynamically -->
+    <!-- Load nav only if page has chapters -->
+    <script>
+      fetch("nav.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("chapter-nav-container").innerHTML = html;
+        })
+        .catch((err) => console.error("Error loading nav.html:", err));
+    </script>
   </body>
 </html>

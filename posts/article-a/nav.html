@@ -1,34 +1,42 @@
-<!-- nav.html -->
-<select
-  id="chapter-dropdown"
-  aria-label="Chapters"
-  onchange="if(this.value) location.href=this.value"
->
-  <option value="" disabled selected>Chapters</option>
-  <option value="intro.html" title="Introduction to Concepts">Intro</option>
-  <option value="ch1.html" title="Chapter 1 Details">Ch1</option>
-  <option value="ch2.html" title="Chapter 2 Details">Ch2</option>
-  <option value="ch3.html" title="Chapter 3 Details">Ch3</option>
-  <option value="conclusion.html" title="Conclusion">Con</option>
-</select>
-
-<style>
-  #chapter-dropdown {
-    margin-left: 8px; /* spacing from left edge of bar */
-    height: 22px;
-    line-height: 22px; /* vertically center text */
-    font-size: 0.85rem;
-    padding: 0 18px 0 8px; /* left/right padding */
-    background: #000; /* match bar */
-    color: #fff;
-    border: 1px solid #d70f0f; /* thin border */
-    border-radius: 6px; /* rounded corners */
-    cursor: pointer;
-    box-sizing: border-box;
-    vertical-align: middle;
-  }
-  #chapter-dropdown option {
-    background: #000;
-    color: #fff;
-  }
-</style>
+<nav class="navbar">
+  <div class="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a href="/index.html" class="nav-link active">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="#contact" class="nav-link">Contact</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a href="#" class="nav-link"
+        >Chapters <i class="fas fa-chevron-down"></i
+      ></a>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item">
+          <a href="./intro.html" class="dropdown-link">Intro</a>
+        </li>
+        <li class="dropdown-item">
+          <a href="./ch1.html" class="dropdown-link">Ch1</a>
+        </li>
+        <li class="dropdown-item">
+          <a href="./ch2.html" class="dropdown-link">Ch2</a>
+        </li>
+        <li class="dropdown-item">
+          <a href="./ch3.html" class="dropdown-link">Ch3</a>
+        </li>
+        <li class="dropdown-item">
+          <a href="./conclusion.html" class="dropdown-link">Con</a>
+        </li>
+        <li class="dropdown-item">
+          <a href="https://example.com" class="dropdown-link" target="_blank"
+            >External</a
+          >
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>

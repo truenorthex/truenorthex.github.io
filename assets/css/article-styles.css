@@ -1,8 +1,8 @@
 /* Container */
 .article-container {
-  max-width: 900px; /* wider container so image can grow */
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: calc(2rem + 70px) 1rem 2rem 1rem; /* Updated for navbar height */
 }
 
 /* Title Card */
@@ -20,7 +20,7 @@
   height: 26px; /* bar height */
   background-color: #000; /* solid black */
   color: #fff;
-  border-bottom: 1px solid #555; rgba(222, 62, 62, 0.06);
+  border-bottom: 1px solid #555;
   z-index: 9998;
   box-sizing: border-box;
   display: flex;

@@ -1,104 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Article with Top Title</title>
-        <!-- Styles -->
-        <link href="/assets/css/styles.css" rel="stylesheet"/>
-        <link href="/assets/css/article-styles.css" rel="stylesheet"/>
-        <link href="/assets/css/navbar.css" rel="stylesheet"/>
-        <!-- Font Awesome -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
-        <!-- Inline fixes -->
-        <style>* { box-sizing: border-box; } #site-topbar { display: none !important; } #chapter-nav-container { display: block !important; position: relative !important; z-index: 1000 !important; height: auto !important; } /* Container padding override */.article-container { padding: calc(1.5rem + 40px) 1rem 1.5rem 1rem; } /* Direction-aware alignment */[dir="rtl"] { text-align: right; } [dir="ltr"] { text-align: left; }</style>
-        <!-- Meta tags for social -->
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:title" content="این تیتر این مقاله است"/>
-        <meta name="twitter:description" content="این تشریح اینجا است کوتاه مقاله است که حدود دویست کاراکتر است"/>
-        <meta name="twitter:image" content="https://truenorthex.github.io/assets/img/header-imagew.png"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"/>
-    </head>
-    <body>
-        <div id="chapter-nav-container"></div>
-        <div id="site-topbar"></div>
-        <div class="article-container">
-            <!-- Article Header -->
-            <header class="article-header">
-                <h1 class="article-title">Article فارسی Title</h1>
-                <p class="article-subtitle">
-          Article subtitle Article subtitle Article subtitle </p>
-            </header>
-            <!-- Article Header Image -->
-            <div class="article-header-image">
-                <img src="/assets/img/header-image.webp" alt="Article image" loading="eager"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article with Top Title</title>
+    <!-- Styles -->
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+    <link href="/assets/css/article-styles.css" rel="stylesheet" />
+    <link href="/assets/css/navbar.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Inline fixes -->
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      #site-topbar {
+        display: none !important;
+      }
+      #chapter-nav-container {
+        display: block !important;
+        position: relative !important;
+        z-index: 1000 !important;
+        height: auto !important;
+      } /* Container padding override */
+      .article-container {
+        padding: calc(1.5rem + 40px) 1rem 1.5rem 1rem;
+      } /* Direction-aware alignment */
+      [dir="rtl"] {
+        text-align: right;
+      }
+      [dir="ltr"] {
+        text-align: left;
+      }
+    </style>
+    <!-- Meta tags for social -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="این تیتر این مقاله است" />
+    <meta
+      name="twitter:description"
+      content="این تشریح اینجا است کوتاه مقاله است که حدود دویست کاراکتر است"
+    />
+    <meta
+      name="twitter:image"
+      content="https://truenorthex.github.io/assets/img/alpha-bg.jpg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    />
+  </head>
+  <body>
+    <div id="chapter-nav-container"></div>
+    <div id="site-topbar"></div>
+    <div class="article-container">
+      <!-- Article Header -->
+      <header class="article-header">
+        <h1 class="article-title">Article فارسی Title</h1>
+        <p class="article-subtitle">
+          Article subtitle Article subtitle Article subtitle
+        </p>
+      </header>
+      <!-- Article Header Image -->
+      <div class="article-header-image">
+        <img
+          src="/assets/img/header-image.webp"
+          alt="Article image"
+          loading="eager"
+        />
+      </div>
+      <!-- Article Body -->
+      <main class="article-body py-3">
+        <!-- RTL Paragraph Example -->
+        <div class="article-text" dir="rtl">
+          <div class="article-text" dir="rtl">
+            <div class="article-text" dir="rtl">
+              دبیر گروه زیست بوم / تجاوزات اخیر رژیم&nbsp;
+              جنگلی&nbsp;جنگلی&nbsp;جنگلی جنگلی به ایران بهانه‌ای شد تا با علی
+              مشهدی، عضو هیأت علمی دانشگاه قم و دکترای بین‌الملل محیط زیست،
+              درباره پیامدهای حقوقی و زیست‌محیطی جنگ‌ها در خاورمیانه و بویژه
+              تخریب گسترده منابع جنگلی و محیط زیستی ناشی از این مخاصمات گفت‌وگو
+              کنیم.
             </div>
-            <!-- Article Body -->
-            <main class="article-body py-3">
-                <!-- RTL Paragraph Example -->
-                <div class="article-text" dir="rtl">
-                    <div class="article-text" dir="rtl">
-                        <div class="article-text" dir="rtl">
-                            دبیر گروه زیست بوم / تجاوزات اخیر رژیم&nbsp;
-                            جنگلی&nbsp;جنگلی&nbsp;جنگلی جنگلی به ایران بهانه‌ای شد تا با علی
-                            مشهدی، عضو هیأت علمی دانشگاه قم و دکترای بین‌الملل محیط زیست،
-                            درباره پیامدهای حقوقی و زیست‌محیطی جنگ‌ها در خاورمیانه و بویژه
-                            تخریب گسترده منابع جنگلی و محیط زیستی ناشی از این مخاصمات گفت‌وگو
-                            کنیم.
-</div>
-                        دبیر گروه زیست بوم اینجا مهم است. / تجاوزات اخیر رژیم صهیونیستی به
-                        ایران بهانه‌ای شد تا با علی مشهدی، عضو هیأت علمی دانشگاه قم و دکترای
-                        بین‌الملل محیط زیست، درباره پیامدهای حقوقی و زیست‌محیطی جنگ‌ها در
-                        خاورمیانه و بویژه تخریب گسترده منابع جنگلی و محیط زیستی ناشی از این
-                        مخاصمات گفت‌وگو کنیم.
-                    </div>
-                    دبیر گروه زیست بوم / تجاوزات اخیر رژیم صهیونیستی به ایران بهانه‌ای شد
-                    تا با علی مشهدی، عضو هیأت علمی دانشگاه قم و دکترای بین‌الملل محیط
-                    زیست، درباره پیامدهای حقوقی و زیست‌محیطی جنگ‌ها در خاورمیانه و بویژه
-                    تخریب گسترده منابع جنگلی و محیط زیستی ناشی از این مخاصمات گفت‌وگو
-                    کنیم.
-                </div>
-            </main>
-            <div>
-                <img src="/assets/img/1.webp" width="300"/>
-                <img src="/assets/img/alpha-bg.jpg" width="300"/>
-                <img src="/assets/img/e4ba64fe-79fb-46f0-97d3-0b181beb74e5.jpeg" width="300"/>
-            </div>
-            <div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Username</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Larry</td>
-                            <td>the Bird</td>
-                            <td>@twitter</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="rtl-text-block">
-                <img src="/assets/img/alpha-bg.jpg" width="200" class="float-img"/>
-                <p>در موردی که شما مطرح کرده‌اید، هوش مصنوعی جایگزین تفکر انسانی نشده
+            دبیر گروه زیست بوم اینجا مهم است. / تجاوزات اخیر رژیم صهیونیستی به
+            ایران بهانه‌ای شد تا با علی مشهدی، عضو هیأت علمی دانشگاه قم و دکترای
+            بین‌الملل محیط زیست، درباره پیامدهای حقوقی و زیست‌محیطی جنگ‌ها در
+            خاورمیانه و بویژه تخریب گسترده منابع جنگلی و محیط زیستی ناشی از این
+            مخاصمات گفت‌وگو کنیم.
+          </div>
+          دبیر گروه زیست بوم / تجاوزات اخیر رژیم صهیونیستی به ایران بهانه‌ای شد
+          تا با علی مشهدی، عضو هیأت علمی دانشگاه قم و دکترای بین‌الملل محیط
+          زیست، درباره پیامدهای حقوقی و زیست‌محیطی جنگ‌ها در خاورمیانه و بویژه
+          تخریب گسترده منابع جنگلی و محیط زیستی ناشی از این مخاصمات گفت‌وگو
+          کنیم.
+        </div>
+      </main>
+      <div>
+        <img src="/assets/img/1.webp" width="300" />
+        <img src="/assets/img/alpha-bg.jpg" width="300" />
+        <img
+          src="/assets/img/e4ba64fe-79fb-46f0-97d3-0b181beb74e5.jpeg"
+          width="300"
+        />
+      </div>
+      <div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="rtl-text-block">
+        <img src="/assets/img/alpha-bg.jpg" width="200" class="float-img" />
+        <p>
+          در موردی که شما مطرح کرده‌اید، هوش مصنوعی جایگزین تفکر انسانی نشده
           است، بلکه برای تقویت آن به کار گرفته شده است. این نکته کلیدی است.
           نویسندگان با تفکر انتقادی، ساختاردهی به کار، نتیجه‌گیری، و شاید
           استفاده از هوش مصنوعی برای موارد زیر اقدام کرده‌اند در موردی که شما
@@ -116,38 +159,51 @@
           مطرح کرده‌اید، هوش مصنوعی جایگزین تفکر انسانی نشده است، بلکه برای
           تقویت آن به کار گرفته شده است. این نکته کلیدی است. نویسندگان با تفکر
           انتقادی، ساختاردهی به کار، نتیجه‌گیری، و شاید استفاده از هوش مصنوعی
-          برای موارد زیر اقدام کرده‌اند.</p>
-                <p>&nbsp; &nbsp;</p>
-            </div>
-            <div style="width:100%; display:flex; justify-content:center;">
-                <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://pinegrow.com/placeholders/img18.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
+          برای موارد زیر اقدام کرده‌اند.
+        </p>
+        <p>&nbsp; &nbsp;</p>
+      </div>
+      <div style="width: 100%; display: flex; justify-content: center">
+        <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="https://pinegrow.com/placeholders/img18.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
-        <!-- Footer -->
-        <footer class="site-footer">
-            <div class="footer-content">© 2023 Your Blog</div>
-            <div class="footer-nav"><a href="/index.html" class="footer-link">Home</a>
-                <button id="themeToggle" aria-label="Toggle theme" class="footer-theme-toggle">
-                    ☀️
-</button>
-            </div>
-        </footer>
-        <!-- Scripts -->
-        <script src="/assets/js/jquery.min.js"></script>
-        <!-- test for conflict with BS5 we do not use this js -->
-        <script src="/assets/js/popper.js"></script>
-        <!-- test for conflict with BS5 we do not use this js -->
-        <script src="/bootstrap/js/bootstrap.js"></script>
-        <!-- test for conflict with BS5 we do not use this js -->
-        <script src="/assets/js/toggle-theme.js"></script>
-        <script src="/assets/js/navbar.js"></script>
-    </body>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">© 2023 Your Blog</div>
+      <div class="footer-nav">
+        <a href="/index.html" class="footer-link">Home</a>
+        <button
+          id="themeToggle"
+          aria-label="Toggle theme"
+          class="footer-theme-toggle"
+        >
+          ☀️
+        </button>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <!-- test for conflict with BS5 we do not use this js -->
+    <script src="/assets/js/popper.js"></script>
+    <!-- test for conflict with BS5 we do not use this js -->
+    <script src="/bootstrap/js/bootstrap.js"></script>
+    <!-- test for conflict with BS5 we do not use this js -->
+    <script src="/assets/js/toggle-theme.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+  </body>
 </html>

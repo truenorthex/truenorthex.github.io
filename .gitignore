@@ -10,3 +10,14 @@ deploy.sh
 
 # Voice temp file
 VOICE_.txt
+
+# all .DS_Store files 
+.DS_Store
+*/.DS_Store
+
+pinegrow.json
+.phcode.json
+reload.py
+.vscode/
+_pginfo/
+_pgbackup/

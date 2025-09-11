@@ -1,72 +1,147 @@
 /* Container */
 .article-container {
-  max-width: 900px; /* wider container so image can grow */
-  margin: 0 auto;
-  padding: 2rem 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: calc(2rem + 70px) 1rem 2rem 1rem;
+
+    /* Updated for navbar height */
 }
 
 /* Title Card */
 .article-header {
-  text-align: center;
-  margin-bottom: 1.5rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 /* Permanent top bar */
 #site-topbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 26px; /* bar height */
-  background-color: #000; /* solid black */
-  color: #fff;
-  border-bottom: 1px solid #555; rgba(222, 62, 62, 0.06);
-  z-index: 9998;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center; /* vertical centering */
-  padding-left: 8px; /* space for dropdown */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 26px;
+
+    /* bar height */
+    background-color: #000;
+
+    /* solid black */
+    color: #fff;
+    border-bottom: 1px solid #555;
+    z-index: 9998;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+    /* vertical centering */
+    padding-left: 8px;
+
+    /* space for dropdown */
 }
 
 /* Reserve space for content below the bar */
 .article-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: calc(2rem + 26px) 1rem 2rem 1rem;
+    max-width: 900px;
+    width: 100%;
+
+    /* allow shrinking on smaller screens */
+    margin: 0 auto;
+
+    /* center horizontally */
+    padding: calc(2rem + 26px) 1rem 2rem 1rem;
+    font-size: clamp(18px, 2vw, 21px);
+
+    /* responsive font size */
+    line-height: 1.6;
+
+    /* readable line spacing */
+    direction: rtl;
+
+    /* RTL text flow */
+    text-align: right;
+}
+
+.article-container img {
+    max-width: 100%;
+
+    /* shrink images with container */
+    height: auto;
+
+    /* preserve aspect ratio */
+    display: block;
+    margin: 1.5rem auto;
+
+    /* vertical spacing and center horizontally */
 }
 
 .article-title {
-  font-size: clamp(36px, 4vw, 40px);
-  margin-bottom: 0.5rem;
+    font-size: clamp(36px, 4vw, 40px);
+    margin-bottom: 0.5rem;
 }
 
 .article-subtitle {
-  font-size: clamp(18px, 1.5vw, 30px);
-  color: #666;
+    font-size: clamp(18px, 1.5vw, 30px);
+    color: #666;
 }
 
 /* Header Image */
 .article-header-image {
-  width: 100%;
-  margin-bottom: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
 .article-header-image img {
-  max-height: 300px; /* Limit the tallest images */
-  width: auto; /* Width scales proportionally */
-  max-width: 100%; /* Never overflow container */
-  display: block;
-  margin: 0 auto; /* Center the image */
+    max-height: 300px;
+
+    /* Limit the tallest images */
+    width: auto;
+
+    /* Width scales proportionally */
+    max-width: 100%;
+
+    /* Never overflow container */
+    display: block;
+    margin: 0 auto;
+
+    /* Center the image */
 }
 
 /* Article Body */
 .article-body {
-  font-size: 1rem;
-  line-height: 1.6;
+    display: flex;
+    justify-content: center;
+
+    /* horizontally center the article container */
+    padding: 1rem;
+
+    /* breathing room for small screens */
+    flex-direction: row;
+
+    /* default row is fine for a single column */
 }
 
 .article-body img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0.5rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.rtl-text-block {
+    direction: rtl;
+    text-align: right;
+}
+
+.rtl-text-block .float-img {
+    float: left;
+
+    /* keep image to the left */
+    margin: 0 10px 10px 0;
+
+    /* small padding on right and bottom */
+    max-width: 200px;
+
+    /* size limit */
+    height: auto;
+    border-radius: 8px;
+
+    /* optional rounded look */
 }

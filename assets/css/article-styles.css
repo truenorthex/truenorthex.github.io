@@ -48,7 +48,7 @@
 
   /* center horizontally */
   padding: calc(2rem + 26px) 1rem 2rem 1rem;
-  font-size: clamp(14px, 1.5vw, 20px);
+  font-size: clamp(14px, 1.5vw, 18px);
 
   /* responsive font size */
   line-height: 1.6;

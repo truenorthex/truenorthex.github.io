@@ -145,3 +145,9 @@
 
   /* optional rounded look */
 }
+
+.myHLTClass {
+  font-size: 1.2em; /* 20% larger tahn parent */
+  font-style: italic;
+  color: brown;
+}

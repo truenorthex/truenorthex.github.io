@@ -39,7 +39,7 @@
 }
 
 /* Reserve space for content below the bar */
-.article-container {
+.article-container .article-container * {
   max-width: 900px;
   width: 100%;
 
@@ -58,6 +58,8 @@
 
   /* RTL text flow */
   text-align: right;
+
+  color: var(--bs-body-color); /*  TEST  */
 }
 
 .article-container img {
@@ -116,7 +118,11 @@
   /* breathing room for small screens */
   flex-direction: row;
 
-  /* default row is fine for a single column */
+  color: var(--bs-body-color);
+}
+
+.article-text {
+  color: var(--bs-body-color);
 }
 
 .article-body img {

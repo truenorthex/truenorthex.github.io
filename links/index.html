@@ -5,55 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Links</title>
     <style>
-      body {
-        font-family: system-ui, sans-serif;
-        text-align: center;
-        background: #f9f9f9;
-        color: #222;
-        margin: 0;
-        padding: 2rem 1rem;
-        max-width: 500px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-      img.avatar {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        margin-bottom: 1rem;
-      }
-      h2 {
-        margin: 0.5rem 0;
-      }
-      p.tagline {
-        color: #666;
-        margin-bottom: 2rem;
-      }
-      .link-btn {
-        display: block;
-        text-align: center;
-        padding: 1rem;
-        margin: 0.75rem auto;
-        width: 90%;
-        max-width: 500px;
-        background: #038b82;
-        color: #ffffff;
-        border-radius: 10px;
-        font-size: clamp(0.9rem, 1vw, 1.2rem);
-        text-decoration: none;
-        transition: background 0.2s ease;
-        word-break: break-word;
-      }
-      .link-btn:hover {
-        background: #c1841c;
-      }
-    </style>
+  body {
+    font-family: system-ui, sans-serif;
+    text-align: center;
+    background: #f9f9f9;
+    color: #222;
+    margin: 0;
+    padding: 2rem 1rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    margin: 0.5rem 0;
+  }
+
+  p.tagline {
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Resource Links (inline, small buttons above stack) */
+  .resource-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+  }
+
+  .resource-link {
+    font-size: 1rem;
+  text-decoration: none;
+  color: #0073e6;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  background: #f0f0f0;         
+  border: 1px solid #454545;      
+  transition: background 0.2s, border-color 0.2s;
+  }
+
+  .resource-link:hover {
+color: #ffffff;
+    background: #038b82;          /* soft hover background */
+  border-color: #038b82;        /* highlight border */
+  }
+
+  /* Main link buttons */
+  .link-btn {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin: 0.75rem auto;
+    width: 90%;
+    max-width: 500px;
+    background: #038b82;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: clamp(0.9rem, 1vw, 1.2rem);
+    text-decoration: none;
+    transition: background 0.2s ease;
+    word-break: break-word;
+  }
+
+  .link-btn:hover {
+    background: #c1841c;
+  }
+</style>
+
   </head>
   <body>
     <img src="./tne.png" alt="Profile photo" class="avatar" />
     <h2>شمال حقیقی</h2>
     <p class="tagline">منابع محافظه کار با تعهد به حقیقت اخلاقی</p>
 
+    <!-- Resource Links -->
+  <div class="resource-links">
+  <a href="https://example.com" class="resource-link">وب‌سایت</a>
+  <a href="mailto:someone@example.com" class="resource-link">ایمیل</a>
+  <a href="https://t.me/username" class="resource-link">تلگرام</a>
+  </div>
+
+  <!-- Button Stack -->
+    
     <a class="link-btn" href="https://youtube.com" target="_blank" dir="rtl"
       >🌶 ابطال نظریه امپریالیسم: تحلیلی عمیق بر اساس آثار یوهان نوربرگ و استیون پینکر</a
     >

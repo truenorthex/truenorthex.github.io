@@ -1,113 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Links</title>
     <style>
-  body {
-    font-family: system-ui, sans-serif;
-    text-align: center;
-    background: #f9f9f9;
-    color: #222;
-    margin: 0;
-    padding: 2rem 1rem;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+      body {
+        font-family: system-ui, sans-serif;
+        text-align: center;
+        background: #f9f9f9;
+        color: #222;
+        margin: 0;
+        padding: 2rem 1rem;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
-  img.avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-  }
+     /* Top section container */
+.top-row {
+  display: flex;
+  flex-direction: column;       /* subtitle goes below title */
+  align-items: center;          /* center title row and subtitle horizontally */
+  margin-bottom: 1rem;
+  text-align: center;           /* center subtitle text */
+}
 
-  h2 {
-    margin: 0.5rem 0;
-  }
+/* H1 title + inline image row */
+.account-name {
+  display: flex;                /* image + text inline */
+  align-items: center;          /* vertically align image and text */
+  gap: 0.5rem;                  /* space between image and title */
+  font-size: 1.4rem;
+  margin: 0;
+  justify-content: center;      /* center content horizontally */
+}
 
-  p.tagline {
-    color: #666;
-    margin-bottom: 1.5rem;
-  }
+/* Small circular inline profile image */
+.profile-img-inline {
+  width: 3em;                 
+  height: 3em;
+  border-radius: 50%;
+  object-fit: cover;
+}
 
-  /* Resource Links (inline, small buttons above stack) */
-  .resource-links {
-    display: flex;
-    justify-content: center;
-    gap: 0.8rem;
-    margin-bottom: 1.5rem;
-    flex-wrap: wrap; /* allows wrapping on small screens */
-  }
+/* Subtitle below title row */
+.account-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.25rem 0 0 0;
+}
 
-  .resource-link {
-    font-size: 0.9rem;
-  text-decoration: none;
-  color: #0073e6;
-  padding: 0.3rem 0.6rem;
-  border-radius: 8px;
-  background: #f0f0f0;         
-  border: 1px solid #454545;      
-  transition: background 0.2s, border-color 0.2s;
-  }
+/* Optional: keep larger avatar styles if needed elsewhere */
+img.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
 
-  .resource-link:hover {
-color: #ffffff;
-    background: #038b82;          /* soft hover background */
-  border-color: #038b82;        /* highlight border */
-  }
+/* Headings and tagline adjustments */
+h2 {
+  margin: 0.5rem 0;
+}
 
-  /* Main link buttons */
-  .link-btn {
-    display: block;
-    text-align: center;
-    padding: 1rem;
-    margin: 0.75rem auto;
-    width: 90%;
-    max-width: 500px;
-    background: #038b82;
-    color: #ffffff;
-    border-radius: 10px;
-    font-size: clamp(0.9rem, 1vw, 1.2rem);
-    text-decoration: none;
-    transition: background 0.2s ease;
-    word-break: break-word;
-  }
+p.tagline {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
 
-  .link-btn:hover {
-    background: #c1841c;
-  }
-</style>
+      /* Resource Links (inline, small buttons above stack) */
+      .resource-links {
+        display: flex;
+        justify-content: center;
+        gap: 0.8rem;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap; /* allows wrapping on small screens */
+      }
 
+      .resource-link {
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: #0073e6;
+        padding: 0.3rem 0.6rem;
+        border-radius: 8px;
+        background: #f0f0f0;
+        border: 1px solid #454545;
+        transition:
+          background 0.2s,
+          border-color 0.2s;
+      }
+
+      .resource-link:hover {
+        color: #ffffff;
+        background: #038b82; /* soft hover background */
+        border-color: #038b82; /* highlight border */
+      }
+
+      /* Main link buttons */
+      .link-btn {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        margin: 0.75rem auto;
+        width: 90%;
+        max-width: 500px;
+        background: #038b82;
+        color: #ffffff;
+        border-radius: 10px;
+        font-size: clamp(0.9rem, 1vw, 1.2rem);
+        text-decoration: none;
+        transition: background 0.2s ease;
+        word-break: break-word;
+      }
+
+      .link-btn:hover {
+        background: #c1841c;
+      }
+    </style>
   </head>
   <body>
-    <img src="./tne.png" alt="Profile photo" class="avatar" />
-    <h2>شمال حقیقی</h2>
-    <p class="tagline">منابع محافظه‌کار با تعهد به حقیقت اخلاقی</p>
+
+<div class="top-row" dir="rtl">
+  <h1 class="account-name">
+    <img src="./tne.png" alt="Profile image" class="profile-img-inline">شمال حقیقی</h1>
+  <p class="account-subtitle">منابع محافظه‌کار با تعهد به حقیقت اخلاقی</p>
+</div>
+    
 
     <!-- Resource Links -->
-  <div class="resource-links">
-  <a href="https://example.com" class="resource-link">وب‌سایت</a>
-  <a href="mailto:someone@example.com" class="resource-link">ایمیل</a>
-  <a href="https://t.me/username" class="resource-link">تلگرام</a>
-  </div>
+    <div class="resource-links">
+      <a href="https://example.com" class="resource-link">وب‌سایت</a>
+      <a href="mailto:someone@example.com" class="resource-link">ایمیل</a>
+      <a href="https://t.me/username" class="resource-link">تلگرام</a>
+    </div>
 
-  <!-- Button Stack -->
-    
+    <!-- Button Stack -->
+
     <a class="link-btn" href="https://youtube.com" target="_blank" dir="rtl"
       >🌶 ابطال نظریه امپریالیسم: تحلیلی عمیق بر اساس آثار یوهان نوربرگ و استیون پینکر</a
     >
-    <a class="link-btn" href="https://shop.com" target="_blank"
-      >📖 Visit My Shop</a
-    >
-    <a class="link-btn" href="https://blog.com" target="_blank"
-      >📚 Read My Blog</a
-    >
-    <a class="link-btn" href="https://read.com" target="_blank"
-      >📒 Read New article</a
-    >
-
+    <a class="link-btn" href="https://shop.com" target="_blank">📖 Visit My Shop</a>
+    <a class="link-btn" href="https://blog.com" target="_blank">📚 Read My Blog</a>
+    <a class="link-btn" href="https://read.com" target="_blank">📒 Read New article</a>
   </body>
 </html>

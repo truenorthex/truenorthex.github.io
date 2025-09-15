@@ -17,57 +17,57 @@
         margin-right: auto;
       }
 
-     /* Top section container */
-.top-row {
-  display: flex;
-  flex-direction: column;       /* subtitle goes below title */
-  align-items: center;          /* center title row and subtitle horizontally */
-  margin-bottom: 1rem;
-  text-align: center;           /* center subtitle text */
-}
+      /* Top section container */
+      .top-row {
+        display: flex;
+        flex-direction: column; /* subtitle goes below title */
+        align-items: center; /* center title row and subtitle horizontally */
+        margin-bottom: 1rem;
+        text-align: center; /* center subtitle text */
+      }
 
-/* H1 title + inline image row */
-.account-name {
-  display: flex;                /* image + text inline */
-  align-items: center;          /* vertically align image and text */
-  gap: 0.5rem;                  /* space between image and title */
-  font-size: 1.4rem;
-  margin: 0;
-  justify-content: center;      /* center content horizontally */
-}
+      /* H1 title + inline image row */
+      .account-name {
+        display: flex; /* image + text inline */
+        align-items: center; /* vertically align image and text */
+        gap: 0.5rem; /* space between image and title */
+        font-size: 1.4rem;
+        margin: 0;
+        justify-content: center; /* center content horizontally */
+      }
 
-/* Small circular inline profile image */
-.profile-img-inline {
-  width: 4em;                 
-  height: 4em;
-  border-radius: 50%;
-  object-fit: cover;
-}
+      /* Small circular inline profile image */
+      .profile-img-inline {
+        width: 4em;
+        height: 4em;
+        border-radius: 50%;
+        object-fit: cover;
+      }
 
-/* Subtitle below title row */
-.account-subtitle {
-  font-size: 0.9rem;
-  color: #666;
-  margin: 0.25rem 0 0 0;
-}
+      /* Subtitle below title row */
+      .account-subtitle {
+        font-size: 0.9rem;
+        color: #666;
+        margin: 0.25rem 0 0 0;
+      }
 
-/* Optional: keep larger avatar styles if needed elsewhere */
-img.avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
+      /* Optional: keep larger avatar styles if needed elsewhere */
+      img.avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
 
-/* Headings and tagline adjustments */
-h2 {
-  margin: 0.5rem 0;
-}
+      /* Headings and tagline adjustments */
+      h2 {
+        margin: 0.5rem 0;
+      }
 
-p.tagline {
-  color: #666;
-  margin-bottom: 1.5rem;
-}
+      p.tagline {
+        color: #666;
+        margin-bottom: 1.5rem;
+      }
 
       /* Resource Links (inline, small buttons above stack) */
       .resource-links {
@@ -110,7 +110,7 @@ p.tagline {
         border-radius: 10px;
         font-size: clamp(0.9rem, 1vw, 1.2rem);
         text-decoration: none;
-        transition: background 0.2s ease;
+        
         word-break: break-word;
       }
 
@@ -120,13 +120,10 @@ p.tagline {
     </style>
   </head>
   <body>
-
-<div class="top-row" dir="rtl">
-  <h1 class="account-name">
-    <img src="./tne.png" alt="Profile image" class="profile-img-inline">شمال حقیقی</h1>
-  <p class="account-subtitle">منابع محافظه‌کار با تعهد به حقیقت اخلاقی</p>
-</div>
-    
+    <div class="top-row" dir="rtl">
+      <h1 class="account-name"><img src="./tne.png" alt="Profile image" class="profile-img-inline" />شمال حقیقی</h1>
+      <p class="account-subtitle">منابع محافظه‌کار با تعهد به حقیقت اخلاقی</p>
+    </div>
 
     <!-- Resource Links -->
     <div class="resource-links">

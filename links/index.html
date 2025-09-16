@@ -36,11 +36,11 @@
         justify-content: center; /* center content horizontally */
       }
 
-      /* Small circular inline profile image */
+      /* Small profile image */
       .profile-img-inline {
-        width: 4em;
-        height: 4em;
-        border-radius: 50%;
+        width: 6em;
+        height: 6em;
+        border-radius: 0.5em;
         object-fit: cover;
       }
 
@@ -51,13 +51,6 @@
         margin: 0.25rem 0 0 0;
       }
 
-      /* Optional: keep larger avatar styles if needed elsewhere */
-      img.avatar {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        margin-bottom: 1rem;
-      }
 
       /* Headings and tagline adjustments */
       h2 {
@@ -120,10 +113,12 @@
     </style>
   </head>
   <body>
-    <div class="top-row" dir="rtl">
-      <h1 class="account-name"><img src="./tne.png" alt="Profile image" class="profile-img-inline" />شمال حقیقی</h1>
-      <p class="account-subtitle">منابع محافظه‌کار با تعهد به حقیقت اخلاقی</p>
-    </div>
+
+<div class="top-row" dir="rtl">
+  <img src="./tne.png" alt="Profile image" class="profile-img-inline" />
+  <h1 class="account-name">شمال حقیقی</h1>
+  <p class="account-subtitle">منابع محافظه‌کار با تعهد به حقیقت اخلاقی</p>
+</div>
 
     <!-- Resource Links -->
     <div class="resource-links">
